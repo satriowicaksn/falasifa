@@ -6,7 +6,7 @@
     <title>Falasifa Indonesia</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="<?= base_url() ?>assets/style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <!-- <link rel="stylesheet" href="<?= base_url() ?>assets/style/css"> -->
     <script src="https://use.fontawesome.com/633ebedb26.js"></script>
@@ -29,15 +29,65 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
+.btn-falasifa span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.2s;
+}
+
+.btn-falasifa span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  /* transition: 0.8s; */
+}
+
+.btn-falasifa:hover span {
+  padding-right: 25px;
+}
+
+.btn-falasifa{
+  width: 80%;
+  padding-top:10px;
+  padding-bottom:10px;
+  font-weight: 600;
+  background: -webkit-linear-gradient(#961D91, #F9026D);
+  border: none;
+  color: white;
+  border-radius: 30px;
+}
+.btn-falasifa:hover{
+  transition: 0.5s;
+  background: #961D91;
+  color: white;
+  border: 1px solid;
+  border-color:#d53a9d;
+  border-radius: 30px;
+  /* font-weight: bold; */
+}
+
+
+.btn-falasifa:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+
+
     </style>
 </head>
 <body>
     <div class="container">
     <div class="col-xs-12">
-      <div class="text-center" style="padding-top: 40px; padding-bottom: 10px;">
+      <div class="text-center" style="padding-top: 40px; padding-bottom: 10px;" onclick="location.href='<?= base_url() ?>'">
           <img class="backdrop linktree"style="background-image: url(<?= base_url() ?>assets/images/falasifa-big-logo.png);">
-          <h2 style="color: #ffffff; padding-top: 10px;">Falasifa Indonesia</h2>
-          <h5 class="">Daily and Party Dress</h5>
+          <!-- <h2 style="color: #ffffff; padding-top: 10px;">Falasifa Indonesia</h2> -->
+          <h5 class="mt-4">Daily and Party Dress</h5>
+
           <hr style="height: 0,8px; color: black; background-color:#961D91;">
       </div>
 
@@ -52,16 +102,22 @@
                     <button onclick="location.href='http://bit.ly/2IZURI7'" type="button" class="btn btn-outline-primary shake text-dark" style="width: 80%; padding-top:10px; padding-bottom:10px; font-weight: 800;">15% OFF Instagram Growth</button>
                 </div> -->
                 <div style="padding-bottom: 30px;">
-                    <button onclick="location.href='http://bit.ly/2SVZXES'" type="button" class="btn text-white" style="width: 80%; padding-top:10px; padding-bottom:10px; font-weight: 600; background: -webkit-linear-gradient(#961D91, #F9026D); border: none;"> <span class="fa fa-whatsapp mr-2"></span> Whatsapp</button>
+                    <a href="https://wa.me/62895390337755" target="_blank" class="btn btn-falasifa" style=""> <span><i class="fa fa-whatsapp mr-2"></i> Whatsapp</span></a>
                 </div>
                 <div style="padding-bottom: 30px;">
-                    <button onclick="location.href='http://bit.ly/2SVZXES'" type="button" class="btn text-white" style="width: 80%; padding-top:10px; padding-bottom:10px; font-weight: 600; background: -webkit-linear-gradient(#961D91, #F9026D); border: none;"> <span class="fa fa-instagram mr-2"></span> Instagram</button>
+                    <a href="https://www.instagram.com/falasifa.id/" target="_blank"  class="btn btn-falasifa"><span><i class="fa fa-instagram mr-2"></i> @falasifa.id</span></a>
                 </div>
                 <div style="padding-bottom: 30px;">
-                    <button onclick="location.href='<?= base_url() ?>home/galeri'; this.innerText='harap tunggu ..';" type="button" class="btn text-white" style="width: 80%; padding-top:10px; padding-bottom:10px; font-weight: 600; background: -webkit-linear-gradient(#961D91, #F9026D); border: none;"> <span class="fa fa-mobile mr-2"></span> Gallery</button>
+                    <a href="https://www.instagram.com/falasifa_dressmaker/" target="_blank" class="btn btn-falasifa"><span><i class="fa fa-instagram mr-2"></i> @falasifa_dressmaker</span></a>
                 </div>
                 <div style="padding-bottom: 30px;">
-                    <button onclick="location.href='http://bit.ly/2SVZXES'" type="button" class="btn text-white" style="width: 80%; padding-top:10px; padding-bottom:10px; font-weight: 600; background: -webkit-linear-gradient(#961D91, #F9026D); border: none;"> <span class="fa fa-usd mr-2"></span> Price List</button>
+                    <a href="https://www.instagram.com/falasifagallery/" target="_blank" class="btn btn-falasifa"><span><i class="fa fa-instagram mr-2"></i> @falasifagallery</span></a>
+                </div>
+                <div style="padding-bottom: 30px;">
+                    <a href="<?= base_url() ?>home/galeri" class="btn btn-falasifa"><span><i class="fa fa-mobile mr-2"></i> Gallery</span> </a>
+                </div>
+                <div style="padding-bottom: 30px;">
+                    <a href="<?= base_url() ?>home/pricelist" class="btn btn-falasifa"> <span><i class="fa fa-usd mr-2"></i> Price List</span></a>
                 </div>
                 <!-- <div style="padding-bottom: 30px;">
                     <button onclick="location.href='http://bit.ly/2SVZXES'" type="button" class="btn btn-outline-info " style="width: 80%; padding-top:10px; padding-bottom:10px; font-weight: 600;">Instagram</button>
@@ -74,9 +130,9 @@
 
 
     </div>
-    <div class="container mb-3">
+    <div class="footer mb-3 mt-5" style="padding: 100px;">
       <div class="text-center">
-          <a href="" style="color: #34312f;"><b>Copyright &copy; Falasifa Indonesia</b></a>
+          <a href="" style="color: black;"><b>Copyright &copy; Falasifa Indonesia</b></a>
           <br><br>
       </div>
     </div>

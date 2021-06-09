@@ -10,6 +10,10 @@ class Home extends CI_Controller
   {
     $this->load->view('main/galeri');
   }
+  public function pricelist()
+  {
+    $this->load->view('main/pricelist');
+  }
 }
 
 ?>

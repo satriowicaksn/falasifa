@@ -126,7 +126,7 @@
                                 <li class="list-group-item falasifa-list" style="background: none; color: white;"> <b>Material : </b> 100% Cotton</li>
                                 <li class="list-group-item falasifa-list" style="background: none; color: white;"> <b>Size : </b> M, L, XL</li>
                                 <li class="list-group-item falasifa-list" style="background: none; color: white;"> <b class="mt-2">Order : </b>
-                                  <button type="button" class="btn btn-sm btn-success ml-3 mt-2" name="button"> <i class="fa fa-whatsapp mr-2"></i> Chat</button>
+                                  <button onclick="location.href='https://wa.me/62895390337755';" type="button" class="btn btn-sm btn-success ml-3 mt-2" name="button"> <i class="fa fa-whatsapp mr-2"></i> Chat</button>
                                 </li>
                               </ul>
                             </div>
@@ -157,7 +157,7 @@
                                 <li class="list-group-item falasifa-list" style="background: none; color: white;"> <b>Material : </b> 100% Cotton</li>
                                 <li class="list-group-item falasifa-list" style="background: none; color: white;"> <b>Size : </b> M, L, XL</li>
                                 <li class="list-group-item falasifa-list" style="background: none; color: white;"> <b class="mt-2">Order : </b>
-                                  <button type="button" class="btn btn-sm btn-success ml-3 mt-2" name="button"> <i class="fa fa-whatsapp mr-2"></i> Chat</button>
+                                  <button onclick="location.href='https://wa.me/62895390337755';" type="button" class="btn btn-sm btn-success ml-3 mt-2" name="button"> <i class="fa fa-whatsapp mr-2"></i> Chat</button>
                                 </li>
                               </ul>
                             </div>
@@ -188,7 +188,7 @@
                                 <li class="list-group-item falasifa-list" style="background: none; color: white;"> <b>Material : </b> 100% Cotton</li>
                                 <li class="list-group-item falasifa-list" style="background: none; color: white;"> <b>Size : </b> M, L, XL</li>
                                 <li class="list-group-item falasifa-list" style="background: none; color: white;"> <b class="mt-2">Order : </b>
-                                  <button type="button" class="btn btn-sm btn-success ml-3 mt-2" name="button"> <i class="fa fa-whatsapp mr-2"></i> Chat</button>
+                                  <button onclick="location.href='https://wa.me/62895390337755';" type="button" class="btn btn-sm btn-success ml-3 mt-2" name="button"> <i class="fa fa-whatsapp mr-2"></i> Chat</button>
                                 </li>
                               </ul>
                             </div>
@@ -220,7 +220,7 @@
                                 <li class="list-group-item falasifa-list" style="background: none; color: white;"> <b>Material : </b> 100% Cotton</li>
                                 <li class="list-group-item falasifa-list" style="background: none; color: white;"> <b>Size : </b> M, L, XL</li>
                                 <li class="list-group-item falasifa-list" style="background: none; color: white;"> <b class="mt-2">Order : </b>
-                                  <button type="button" class="btn btn-sm btn-success ml-3 mt-2" name="button"> <i class="fa fa-whatsapp mr-2"></i> Chat</button>
+                                  <button onclick="location.href='https://wa.me/62895390337755';" type="button" class="btn btn-sm btn-success ml-3 mt-2" name="button"> <i class="fa fa-whatsapp mr-2"></i> Chat</button>
                                 </li>
                               </ul>
                             </div>
@@ -254,7 +254,7 @@
                                 <li class="list-group-item falasifa-list" style="background: none; color: white;"> <b>Material : </b> 100% Cotton</li>
                                 <li class="list-group-item falasifa-list" style="background: none; color: white;"> <b>Size : </b> M, L, XL</li>
                                 <li class="list-group-item falasifa-list" style="background: none; color: white;"> <b class="mt-2">Order : </b>
-                                  <button type="button" class="btn btn-sm btn-success ml-3 mt-2" name="button"> <i class="fa fa-whatsapp mr-2"></i> Chat</button>
+                                  <button onclick="location.href='https://wa.me/62895390337755';" type="button" class="btn btn-sm btn-success ml-3 mt-2" name="button"> <i class="fa fa-whatsapp mr-2"></i> Chat</button>
                                 </li>
                               </ul>
                             </div>

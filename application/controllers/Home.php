@@ -14,6 +14,10 @@ class Home extends CI_Controller
   {
     $this->load->view('main/pricelist');
   }
+  public function instagram()
+  {
+    $this->load->view('main/instagrampage');
+  }
 }
 
 ?>

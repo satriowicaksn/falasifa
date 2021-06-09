@@ -75,7 +75,6 @@
   opacity: 1;
   right: 0;
 }
-
 @media (min-width:320px)  { .btn-falasifa{width: 90%} }
 @media (min-width:481px)  { .btn-falasifa{width: 90%} }
 /* POTRAIT TABLET , IPAD , LANDSCAPE PHONE */
@@ -94,7 +93,9 @@
       <div class="text-center" style="padding-top: 40px; padding-bottom: 10px;" onclick="location.href='<?= base_url() ?>'">
           <img class="backdrop linktree"style="background-image: url(<?= base_url() ?>assets/images/falasifa-big-logo.png);">
           <!-- <h2 style="color: #ffffff; padding-top: 10px;">Falasifa Indonesia</h2> -->
-          <h5 class="mt-4">Daily and Party Dress</h5>
+          <h5 class="mt-4">
+
+            Daily and Party Dress</h5>
 
           <hr style="height: 0,8px; color: black; background-color:#961D91;">
       </div>
@@ -109,20 +110,10 @@
                 <!-- <div style="padding-bottom: 30px;">
                     <button onclick="location.href='http://bit.ly/2IZURI7'" type="button" class="btn btn-outline-primary shake text-dark" style="width: 80%; padding-top:10px; padding-bottom:10px; font-weight: 800;">15% OFF Instagram Growth</button>
                 </div> -->
-                <div style="padding-bottom: 30px;">
-                    <a href="<?= base_url() ?>home/galeri" class="btn btn-falasifa"><span><i class="fa fa-mobile mr-2"></i> Gallery</span> </a>
-                </div>
-                <div style="padding-bottom: 30px;">
-                    <a href="<?= base_url() ?>home/pricelist" class="btn btn-falasifa"> <span><i class="fa fa-usd mr-2"></i> Price List</span></a>
-                </div>
-                <div style="padding-bottom: 30px;">
-                    <a href="https://wa.me/62895390337755" target="_blank" class="btn btn-falasifa" style=""> <span><i class="fa fa-whatsapp mr-2"></i> Whatsapp</span></a>
-                </div>
-                <div style="padding-bottom: 30px;">
-                    <a href="<?= base_url() ?>home/instagram" class="btn btn-falasifa" style=""> <span><i class="fa fa-instagram mr-2"></i> Instagram</span></a>
-                </div>
-
                 <!-- <div style="padding-bottom: 30px;">
+                    <a href="https://wa.me/62895390337755" target="_blank" class="btn btn-falasifa" style=""> <span><i class="fa fa-whatsapp mr-2"></i> Whatsapp</span></a>
+                </div> -->
+                <div style="padding-bottom: 30px;">
                     <a href="https://www.instagram.com/falasifa.id/" target="_blank"  class="btn btn-falasifa"><span><i class="fa fa-instagram mr-2"></i> @falasifa.id</span></a>
                 </div>
                 <div style="padding-bottom: 30px;">
@@ -130,13 +121,25 @@
                 </div>
                 <div style="padding-bottom: 30px;">
                     <a href="https://www.instagram.com/falasifagallery/" target="_blank" class="btn btn-falasifa"><span><i class="fa fa-instagram mr-2"></i> @falasifagallery</span></a>
+                </div>
+                <!-- <div style="padding-bottom: 30px;">
+                    <a href="<?= base_url() ?>home/galeri" class="btn btn-falasifa"><span><i class="fa fa-mobile mr-2"></i> Gallery</span> </a>
+                </div>
+                <div style="padding-bottom: 30px;">
+                    <a href="<?= base_url() ?>home/pricelist" class="btn btn-falasifa"> <span><i class="fa fa-usd mr-2"></i> Price List</span></a>
                 </div> -->
-
                 <!-- <div style="padding-bottom: 30px;">
                     <button onclick="location.href='http://bit.ly/2SVZXES'" type="button" class="btn btn-outline-info " style="width: 80%; padding-top:10px; padding-bottom:10px; font-weight: 600;">Instagram</button>
                 </div> -->
 
             </div>
+    </div>
+    <div class="col-lg-12 mt-3">
+      <div class="text-center">
+        <div class="" onclick="location.href='<?= base_url() ?>'" style="padding-bottom: 30px;">
+          <button type="button" name="button" class="btn-falasifa mr-2 btn-sm" style="width: 100px;"> <i class="fa fa-arrow-left mr-2"></i> Back</button>
+        </div>
+      </div>
     </div>
 
 

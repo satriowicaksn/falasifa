@@ -95,7 +95,7 @@
           <img src="<?= base_url() ?>assets/images/falasifa-big-logo.png" alt="" style="border-radius:100%; width: 200px; height: 200px; box-shadow: 0px 2px 10px #111;;">
           <!-- <h2 style="color: #ffffff; padding-top: 10px;">Falasifa Indonesia</h2> -->
           <h5 class="mt-4 text-white text-center">
-            <button type="button" name="button" class="btn-falasifa mr-2 btn-sm" style="width: 100px;"> <i class="fa fa-arrow-left mr-2"></i> Back</button>
+            <!-- <button type="button" name="button" class="btn-falasifa mr-2 btn-sm" style="width: 100px;"> <i class="fa fa-arrow-left mr-2"></i> Back</button> -->
           Price List
           </h5>
 
@@ -204,6 +204,7 @@
                       </div>
                     </div>
 
+                    <!-- START KOTAK -->
                     <div class="col-12 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12 mt-3">
                       <div class="card" style="background: none; border: 1px solid; border-color: white;">
                         <div class="">
@@ -227,13 +228,48 @@
                               <li class="list-group-item" style="background: none; color: white;"> <b>Deskripsi : <br> </b>
                                 Warna yang terlihat pada gambar mungkin tidak 100% sama dengan produk yang sebenarnya, disebabkan faktor cahaya pada pengambilan gambar, atau kualitas layar gadget yang digunakan untuk melihat gambar.
 
-  Untuk pembelian Online, mohon pertimbangkan toleransi perbedaan warna dan ukuran produk. Apabila setelah barang diterima terdapat perbedaan yang dianggap terlalu jauh dan tidak dapat diterima, silahkan ajukan penukaran barang melalui Customer Service kami.
+                                  Untuk pembelian Online, mohon pertimbangkan toleransi perbedaan warna dan ukuran produk. Apabila setelah barang diterima terdapat perbedaan yang dianggap terlalu jauh dan tidak dapat diterima, silahkan ajukan penukaran barang melalui Customer Service kami.
                               </li>
                             </div>
                           </div>
                         </div>
                       </div>
                     </div>
+                    <!-- END KOTAK -->
+
+
+                    <!-- START KOTAK -->
+                    <div class="col-12 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12 mt-3">
+                      <div class="card" style="background: none; border: 1px solid; border-color: white;">
+                        <div class="">
+                          <div class="row">
+                            <div class="col-6 col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                              <img data-toggle="modal" data-target="#modaldetail" class="img-thumbnail img-falasifa" src="<?= base_url() ?>assets/images/pricelist/6.jpg" alt="">
+                            </div>
+                            <div class="col-6 col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-6" style="padding-top: 12px; padding-left: 0;">
+                              <h5 style="font-size:18px; color: white;" class="card-title text-center">Nama Pakaian</h5>
+                              <ul class="list-group list-group-flush mt-1" style="background: none; color: white;">
+                                <li class="list-group-item falasifa-list" style="background: none; color: white;"> <b>Harga : </b> Rp. 25.000 </li>
+                                <li class="list-group-item falasifa-list" style="background: none; color: white;"> <b>Warna : </b> Pink, Green</li>
+                                <li class="list-group-item falasifa-list" style="background: none; color: white;"> <b>Material : </b> 100% Cotton</li>
+                                <li class="list-group-item falasifa-list" style="background: none; color: white;"> <b>Size : </b> M, L, XL</li>
+                                <li class="list-group-item falasifa-list" style="background: none; color: white;"> <b class="mt-2">Order : </b>
+                                  <button type="button" class="btn btn-sm btn-success ml-3 mt-2" name="button"> <i class="fa fa-whatsapp mr-2"></i> Chat</button>
+                                </li>
+                              </ul>
+                            </div>
+                            <div class="col-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                              <li class="list-group-item" style="background: none; color: white;"> <b>Deskripsi : <br> </b>
+                                Warna yang terlihat pada gambar mungkin tidak 100% sama dengan produk yang sebenarnya, disebabkan faktor cahaya pada pengambilan gambar, atau kualitas layar gadget yang digunakan untuk melihat gambar.
+
+                                  Untuk pembelian Online, mohon pertimbangkan toleransi perbedaan warna dan ukuran produk. Apabila setelah barang diterima terdapat perbedaan yang dianggap terlalu jauh dan tidak dapat diterima, silahkan ajukan penukaran barang melalui Customer Service kami.
+                              </li>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- END KOTAK -->
 
 
       </div>
@@ -244,6 +280,11 @@
 
     </div>
     <div class="footer mb-3 mt-5" style="padding: 100px;">
+      <div class="text-center">
+        <div class="" onclick="location.href='<?= base_url() ?>'" style="padding-bottom: 30px;">
+          <button type="button" name="button" class="btn-falasifa mr-2 btn-sm" style="width: 100px;"> <i class="fa fa-arrow-left mr-2"></i> Back</button>
+        </div>
+      </div>
       <div class="text-center">
           <a href="" style="color: white;"><b>Copyright &copy; Falasifa Indonesia</b></a>
           <br><br>

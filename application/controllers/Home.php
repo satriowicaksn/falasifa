@@ -18,6 +18,10 @@ class Home extends CI_Controller
   {
     $this->load->view('main/instagrampage');
   }
+  public function location()
+  {
+    $this->load->view('main/location');
+  }
 }
 
 ?>

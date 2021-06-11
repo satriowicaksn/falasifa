@@ -4,6 +4,7 @@
 <head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
 
     <title>Falasifa Indonesia</title>
+    <link rel="icon" href="<?= base_url() ?>assets/images/falasifa-big-logo.png">
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="<?= base_url() ?>assets/style.css">
@@ -274,11 +275,8 @@
 
       </div>
 </div>
-
-
-
-
     </div>
+
     <div class="footer mb-3 mt-5" style="padding: 100px;">
       <div class="text-center">
         <div class="" onclick="location.href='<?= base_url() ?>'" style="padding-bottom: 30px;">

@@ -4,6 +4,7 @@
 <head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
 
     <title>Falasifa Indonesia</title>
+    <link rel="icon" href="<?= base_url() ?>assets/images/falasifa-big-logo.png">
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="<?= base_url() ?>assets/style.css">
@@ -94,7 +95,7 @@
       <div class="text-center" style="padding-top: 40px; padding-bottom: 10px;" onclick="location.href='<?= base_url() ?>'">
           <img class="backdrop linktree"style="background-image: url(<?= base_url() ?>assets/images/falasifa-big-logo.png);">
           <!-- <h2 style="color: #ffffff; padding-top: 10px;">Falasifa Indonesia</h2> -->
-          <h5 class="mt-4">Daily and Party Dress</h5>
+          <h5 class="mt-4">Custom Made & Ready To Wear</h5>
 
           <hr style="height: 0,8px; color: black; background-color:#961D91;">
       </div>
@@ -112,11 +113,14 @@
                 <div style="padding-bottom: 30px;">
                     <a href="<?= base_url() ?>home/galeri" class="btn btn-falasifa"><span><i class="fa fa-mobile mr-2"></i> Gallery</span> </a>
                 </div>
-                <div style="padding-bottom: 30px;">
+                <!-- <div style="padding-bottom: 30px;">
                     <a href="<?= base_url() ?>home/pricelist" class="btn btn-falasifa"> <span><i class="fa fa-usd mr-2"></i> Price List</span></a>
+                </div> -->
+                <div style="padding-bottom: 30px;">
+                    <a href="<?= base_url() ?>home/location" class="btn btn-falasifa"><span><i class="fa fa-map-marker mr-2"></i> Maps</span> </a>
                 </div>
                 <div style="padding-bottom: 30px;">
-                    <a href="https://wa.me/62895390337755" target="_blank" class="btn btn-falasifa" style=""> <span><i class="fa fa-whatsapp mr-2"></i> Whatsapp</span></a>
+                    <a href="https://wa.me/6281357003236" target="_blank" class="btn btn-falasifa" style=""> <span><i class="fa fa-whatsapp mr-2"></i> Whatsapp</span></a>
                 </div>
                 <div style="padding-bottom: 30px;">
                     <a href="<?= base_url() ?>home/instagram" class="btn btn-falasifa" style=""> <span><i class="fa fa-instagram mr-2"></i> Instagram</span></a>

@@ -4,7 +4,7 @@
 <head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
 
     <title>Falasifa Indonesia</title>
-
+    <link rel="icon" href="<?= base_url() ?>assets/images/falasifa-big-logo.png">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="<?= base_url() ?>assets/style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">

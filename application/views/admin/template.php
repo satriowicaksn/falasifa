@@ -17,7 +17,7 @@
 
 <link rel="stylesheet" type="text/css" href="<?= base_url() ?>assets/css/bootstrap.min.css">
 <link rel="stylesheet" href="<?= base_url() ?>assets/css/waves.min.css" type="text/css" media="all">
-<link rel="stylesheet" type="text/css" href="css/feather.css">
+<link rel="stylesheet" type="text/css" href="<?= base_url() ?>assets/css/feather.css">
 <link rel="stylesheet" type="text/css" href="<?= base_url() ?>assets/css/font-awesome-n.min.css">
 <link rel="stylesheet" href="<?= base_url() ?>assets/css/chartist.css" type="text/css" media="all">
 <link rel="stylesheet" type="text/css" href="<?= base_url() ?>assets/css/style.css">
@@ -147,6 +147,15 @@
   </a>
   </li>
 
+  <li class="">
+  <a href="<?= base_url() ?>admin/test" class="waves-effect waves-dark">
+  <span class="pcoded-micon">
+  <i class="feather icon-menu"></i>
+  </span>
+  <span class="pcoded-mtext">Test</span>
+  </a>
+  </li>
+
 
 
 
@@ -194,6 +203,7 @@
 <script src="<?= base_url() ?>assets/js/vertical-layout.min.js" type="d2d1d6e2f87cbebdf4013b26-text/javascript"></script>
 <script type="d2d1d6e2f87cbebdf4013b26-text/javascript" src="<?= base_url() ?>assets/js/custom-dashboard.min.js"></script>
 <script type="d2d1d6e2f87cbebdf4013b26-text/javascript" src="<?= base_url() ?>assets/js/script.min.js"></script>
+<script type="d28fd8086f5eb18f81d8672a-text/javascript" src="<?= base_url() ?>assets/js/modal.js"></script>
 
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13" type="d2d1d6e2f87cbebdf4013b26-text/javascript"></script>
 <script type="d2d1d6e2f87cbebdf4013b26-text/javascript">

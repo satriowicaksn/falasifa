@@ -4,14 +4,14 @@
  */
 class Admin_mdl extends CI_Model
 {
-  // public function getUuid()
-  // {
-  //   $get = $this->db->query("SELECT uuid() AS uuid")->row();
-  //   return $get->uuid;
-  // }
+  public function getUuid()
+  {
+    $get = $this->db->query("SELECT uuid() AS uuid")->row();
+    return $get->uuid;
+  }
   public function uploadPicture($gambar)
   {
-    $config['upload_path'] = './assets/galeri'; #FOLDER PENYIMPANAN UNTUK MENYIMPAN FILE
+    $config['upload_path'] = './assets/file_upload'; #FOLDER PENYIMPANAN UNTUK MENYIMPAN FILE
     $config['allowed_types'] = 'gif|jpg|jpeg|png|bmp'; #EKSTENSI FILE YANG DIPERBOLEHKAN UNTUK DI UPLOAD
     $config['encrypt_name'] = TRUE; #ENKRIPSI NAMA GAMBAR
     $this->upload->initialize($config); #INIALISASI KETENTUAN FILE YANG AKAN DI UPLOAD
@@ -19,7 +19,7 @@ class Admin_mdl extends CI_Model
     if (!empty($gambar['name'])) { #CEK APAKAH GAMBAR YANG DIUPLOAD TIDAK KOSONG
       if ($this->upload->do_upload('dataGambar')) { #UPLOAD GAMBAR
         $srcGambar = $this->upload->data();
-        
+
         // COMPRESS IMAGE
         $config['image_library'] = 'gd2';
         $config['source_image'] = './assets/images/'.$srcGambar['file_name'];

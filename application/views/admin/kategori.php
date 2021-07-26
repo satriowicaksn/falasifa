@@ -7,8 +7,8 @@
 <div class="page-header-title">
 <i class="feather icon-home bg-c-blue"></i>
 <div class="d-inline">
-<h5>Link Information</h5>
-<span>kelola link di halaman website</span>
+<h5>Gallery Categories</h5>
+<span>kelola kategori di halaman website</span>
 </div>
 </div>
 </div>
@@ -18,7 +18,7 @@
 <li class="breadcrumb-item">
 <a href="index.html"><i class="feather icon-home"></i></a>
 </li>
-<li class="breadcrumb-item"><a href="#!">Link Information</a> </li>
+<li class="breadcrumb-item"><a href="#!">List Categories</a> </li>
 </ul>
 </div>
 </div>
@@ -32,11 +32,10 @@
 
 <div class="row">
 
-
 <div class="col-xl-12 col-md-12">
 <div class="card latest-update-card">
 <div class="card-header">
-<h5>Link Instagram</h5>
+<h5>List Categories</h5>
 <br>
 <h6 class="text-right">
 <button type="button" class="btn btn-primary waves-effect" data-toggle="modal" data-target="#modal_tambah">Tambah Data</button>
@@ -48,29 +47,22 @@
   <table class="table table-bordered table-hover m-b-0">
   <thead>
   <tr>
-  <th>Nama Link</th>
-  <th>Href</th>
+  <th>Nama Kategori</th>
   <th>Action</th>
   </tr>
   </thead>
   <tbody>
 
 
-  <?php foreach ($link as $l): ?>
+  <?php foreach ($kategori as $k): ?>
     <tr>
-    <td><?= $l->nama_link ?></td>
-    <td><?= $l->href ?></td>
+    <td><?= $k->nama_kategori ?></td>
     <td>
-      <a href="#" data-toggle="modal" data-target="#modal_update<?= $l->id_link ?>" class="btn btn-sm btn-mat btn-info">Edit</a>
-      <a href="#" data-toggle="modal" data-target="#modal_hapus<?= $l->id_link ?>" class="btn btn-sm btn-mat btn-danger">Hapus</a>
+      <a href="#" data-toggle="modal" data-target="#modal_update<?= $k->id_kategori ?>" class="btn btn-sm btn-mat btn-info">Edit</a>
+      <a href="#" data-toggle="modal" data-target="#modal_hapus<?= $k->id_kategori ?>" class="btn btn-sm btn-mat btn-danger">Hapus</a>
     </td>
     </tr>
   <?php endforeach; ?>
-
-
-
-
-
   </tbody>
   </table>
   </div>
@@ -94,20 +86,16 @@
 <div class="modal-dialog" role="document">
 <div class="modal-content">
 <div class="modal-header">
-<h4 class="modal-title">Tambah Link Baru</h4>
+<h4 class="modal-title">Tambah Kategori Baru</h4>
 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
 <span aria-hidden="true">&times;</span>
 </button>
 </div>
 <div class="modal-body">
-<form class="" action="<?= base_url() ?>admin/tambah_link" method="post">
+<form class="" action="<?= base_url() ?>admin/tambah_kategori" method="post">
 <div class="form-group">
-<label>Nama Link</label>
-<input type="text" name="nama_link" required class="form-control" value="">
-</div>
-<div class="form-group">
-<label>Href</label>
-<input type="text" name="href" required class="form-control" value="">
+<label>Nama Kategori</label>
+<input type="text" name="nama_kategori" required class="form-control" value="">
 </div>
 </div>
 <div class="modal-footer">
@@ -121,21 +109,21 @@
 <!-- END MODAL tAMBAH -->
 
 <!-- START MODAL HAPUS -->
-<?php foreach ($link as $l): ?>
-  <div class="modal fade" id="modal_hapus<?= $l->id_link ?>" tabindex="-1" role="dialog">
+<?php foreach ($kategori as $k): ?>
+  <div class="modal fade" id="modal_hapus<?= $k->id_kategori ?>" tabindex="-1" role="dialog">
   <div class="modal-dialog" role="document">
   <div class="modal-content">
   <div class="modal-header">
-  <h4 class="modal-title">Hapus Link</h4>
+  <h4 class="modal-title">Hapus Kategori</h4>
   <button type="button" class="close" data-dismiss="modal" aria-label="Close">
   <span aria-hidden="true">&times;</span>
   </button>
   </div>
   <div class="modal-body">
-  <form class="" action="<?= base_url() ?>admin/hapus_link" method="post">
+  <form class="" action="<?= base_url() ?>admin/hapus_kategori" method="post">
 
-  <h6>Anda akan menghapus Link <u><?= $l->nama_link ?></u></h6>
-  <input type="hidden" name="id_link" value="<?= $l->id_link ?>">
+  <h6>Anda akan menghapus Link <u><?= $k->nama_kategori ?></u></h6>
+  <input type="hidden" name="id_kategori" value="<?= $k->id_kategori ?>">
 
   </div>
   <div class="modal-footer">
@@ -150,28 +138,25 @@
 <!-- END MODAL HAPUS -->
 
 <!-- START MODAL UPDATE -->
-<?php foreach ($link as $l): ?>
-<div class="modal fade" id="modal_update<?= $l->id_link ?>" tabindex="-1" role="dialog">
+<?php foreach ($kategori as $k): ?>
+<div class="modal fade" id="modal_update<?= $k->id_kategori ?>" tabindex="-1" role="dialog">
 <div class="modal-dialog" role="document">
 <div class="modal-content">
 <div class="modal-header">
-<h4 class="modal-title">Update Data Link</h4>
+<h4 class="modal-title">Update Data Kategori</h4>
 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
 <span aria-hidden="true">&times;</span>
 </button>
 </div>
 <div class="modal-body">
-<form class="" action="<?= base_url() ?>admin/update_link" method="post">
+<form class="" action="<?= base_url() ?>admin/update_kategori" method="post">
+
 <div class="form-group">
-<label>Nama Link</label>
-<input type="text" name="nama_link" required class="form-control" value="<?= $l->nama_link ?>">
-</div>
-<div class="form-group">
-<label>Href</label>
-<input type="text" name="href" required class="form-control" value="<?= $l->href ?>">
+<label>Nama Kategori</label>
+<input type="text" name="nama_kategori" required class="form-control" value="<?= $k->nama_kategori ?>">
 </div>
 
-  <input type="hidden" name="id_link" value="<?= $i->id_link ?>">
+<input type="hidden" name="id_kategori" value="<?= $k->id_kategori ?>">
 
 </div>
 <div class="modal-footer">

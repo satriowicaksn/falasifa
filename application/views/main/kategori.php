@@ -76,6 +76,7 @@
   opacity: 1;
   right: 0;
 }
+
 @media (min-width:320px)  { .btn-falasifa{width: 90%} }
 @media (min-width:481px)  { .btn-falasifa{width: 90%} }
 /* POTRAIT TABLET , IPAD , LANDSCAPE PHONE */
@@ -94,7 +95,7 @@
       <div class="text-center" style="padding-top: 40px; padding-bottom: 10px;" onclick="location.href='<?= base_url() ?>'">
           <img class="backdrop linktree"style="background-image: url(<?= base_url() ?>assets/images/falasifa-big-logo.png);">
           <!-- <h2 style="color: #ffffff; padding-top: 10px;">Falasifa Indonesia</h2> -->
-          <h5 class="mt-4">Custom Made & Ready To Wear</h5>
+          <h5 class="mt-4">Pilih Kategori : </h5>
 
           <hr style="height: 0,8px; color: black; background-color:#961D91;">
       </div>
@@ -105,26 +106,16 @@
     <img src="<?= base_url() ?>assets/images/falasifa-logo.png" alt="">
 
     <div class="col-xs-12 col-lg-12">
+        <?php foreach ($kategori as $k): ?>
             <div class="text-center">
-
-                <?php foreach ($instagram as $i): ?>
-                  <div style="padding-bottom: 30px;">
-                      <a href="<?= $i->href ?>" target="_blank"  class="btn btn-falasifa"><span><i class="fa fa-instagram mr-2"></i> <?= $i->nama_link ?></span></a>
-                  </div>
-                <?php endforeach; ?>
-
-                <!-- https://www.instagram.com/falasifa.id/ -->
-
-                <!-- <div style="padding-bottom: 30px;">
-                    <a href="https://www.instagram.com/falasifa_dressmaker/" target="_blank" class="btn btn-falasifa"><span><i class="fa fa-instagram mr-2"></i> @falasifa_dressmaker</span></a>
-                </div>
                 <div style="padding-bottom: 30px;">
-                    <a href="https://www.instagram.com/falasifagallery/" target="_blank" class="btn btn-falasifa"><span><i class="fa fa-instagram mr-2"></i> @falasifagallery</span></a>
-                </div> -->
-
-
+                    <a href="<?= base_url() ?>home/galeri/<?= $k->id_kategori ?>" class="btn btn-falasifa"><span><i class="fa fa-hand-o-right mr-2"></i> <?= $k->nama_kategori ?></span> </a>
+                </div>
             </div>
+            <?php endforeach; ?>
+
     </div>
+
     <div class="col-lg-12 mt-3">
       <div class="text-center">
         <div class="" onclick="location.href='<?= base_url() ?>'" style="padding-bottom: 30px;">

@@ -111,7 +111,7 @@
                     <button onclick="location.href='http://bit.ly/2IZURI7'" type="button" class="btn btn-outline-primary shake text-dark" style="width: 80%; padding-top:10px; padding-bottom:10px; font-weight: 800;">15% OFF Instagram Growth</button>
                 </div> -->
                 <div style="padding-bottom: 30px;">
-                    <a href="<?= base_url() ?>home/galeri" class="btn btn-falasifa"><span><i class="fa fa-mobile mr-2"></i> Gallery</span> </a>
+                    <a href="<?= base_url() ?>home/kategori" class="btn btn-falasifa"><span><i class="fa fa-mobile mr-2"></i> Gallery</span> </a>
                 </div>
                 <!-- <div style="padding-bottom: 30px;">
                     <a href="<?= base_url() ?>home/pricelist" class="btn btn-falasifa"> <span><i class="fa fa-usd mr-2"></i> Price List</span></a>

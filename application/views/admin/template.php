@@ -79,17 +79,17 @@
 <div class="dropdown-primary dropdown">
 <div class="dropdown-toggle" data-toggle="dropdown">
 <img src="<?= base_url() ?>assets/jpg/avatar-4.jpg" class="img-radius" alt="User-Profile-Image">
-<span>Nama User</span>
+<span><?= $this->session->userdata('name') ?></span>
 <i class="feather icon-chevron-down"></i>
 </div>
 <ul class="show-notification profile-notification dropdown-menu" data-dropdown-in="fadeIn" data-dropdown-out="fadeOut">
-<li>
+<!-- <li>
 <a href="auth-sign-in-social.html">
 <i class="feather icon-log-out"></i> Ubah Password
 </a>
-</li>
+</li> -->
 <li>
-<a href="auth-sign-in-social.html">
+<a href="<?= base_url() ?>auth/logout">
 <i class="feather icon-log-out"></i> Logout
 </a>
 </li>
@@ -121,6 +121,15 @@
   </li>
 
   <li class="">
+  <a href="<?= base_url() ?>admin/kategori" class="waves-effect waves-dark">
+  <span class="pcoded-micon">
+  <i class="feather icon-menu"></i>
+  </span>
+  <span class="pcoded-mtext">Categories</span>
+  </a>
+  </li>
+
+  <li class="">
   <a href="<?= base_url() ?>admin/galeri" class="waves-effect waves-dark">
   <span class="pcoded-micon">
   <i class="feather icon-menu"></i>
@@ -146,17 +155,6 @@
   <span class="pcoded-mtext">User</span>
   </a>
   </li>
-
-  <li class="">
-  <a href="<?= base_url() ?>admin/test" class="waves-effect waves-dark">
-  <span class="pcoded-micon">
-  <i class="feather icon-menu"></i>
-  </span>
-  <span class="pcoded-mtext">Test</span>
-  </a>
-  </li>
-
-
 
 
 </ul>

@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-
 <head>
 	<title>Falasifa Admin - Login</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -90,7 +89,6 @@
 		}
 	</style>
 </head>
-
 <body>
 	<div class="container h-100">
 		<div class="d-flex justify-content-center h-100">
@@ -115,7 +113,6 @@
 							</div>
 							<input type="password" name="password" required class="form-control input_pass" value="" placeholder="password">
 						</div>
-
 						<hr>
 						<div class="d-flex justify-content-center mt-3 login_container">
 							<button type="submit" name="button" class="btn login_btn">Login</button>
@@ -126,5 +123,4 @@
 		</div>
 	</div>
 </body>
-
 </html>
